@@ -3,7 +3,7 @@
 import React from 'react';
 import { Quote, Sparkles, ChevronRight } from 'lucide-react';
 
-export function LatestReleaseBento() {
+export function LatestRelease() {
   return (
     <section className="bg-white py-12 px-0 md:px-6 overflow-hidden">
       <div className="text-center mb-8 md:mb-16 space-y-2 md:space-y-4 px-4">
