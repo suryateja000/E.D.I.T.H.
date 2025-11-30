@@ -92,7 +92,7 @@ export function StoreLocations() {
             onMouseLeave={()=>setActiveStore(null)}
             onClick={()=>handlePinClick(store.id)}
           >
-            <div className="relative -translate-x-1/2 -translate-y-1/2 cursor-pointer group">
+            <div className="relative -translate-x-1/2 -translate-x-1/2 cursor-pointer group">
               <div className={`absolute inset-0 rounded-full bg-[#00A4EF] animate-ping ${activeStore===store.id?'opacity-0':'opacity-40'}`} />
               <div className={`relative w-4 h-4 md:w-6 md:h-6 rounded-full border-2 border-white flex items-center justify-center transition-transform duration-300 ${activeStore===store.id?'bg-[#00A4EF] scale-125 shadow-[0_0_20px_rgba(0,164,239,0.5)]':'bg-[#00A4EF] hover:scale-125 shadow-[0_0_15px_rgba(0,164,239,0.3)]'}`}>
                 <div className="w-1.5 h-1.5 rounded-full bg-white" />
@@ -100,7 +100,7 @@ export function StoreLocations() {
             </div>
 
             <div 
-              className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-4 w-56 md:w-72 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] origin-bottom ${activeStore===store.id?'opacity-100 scale-100 translate-y-0':'opacity-0 scale-95 translate-y-2 pointer-events-none'}`}
+              className={`absolute bottom-full left-0 -translate-x-1/2 mb-4 w-56 md:w-72 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] origin-bottom ${activeStore===store.id?'opacity-100 scale-100 translate-y-0':'opacity-0 scale-95 translate-y-2 pointer-events-none'}`}
             >
               <div className="bg-white/95 backdrop-blur-xl border border-slate-200 rounded-lg p-3 md:p-5 shadow-[0_10px_40px_rgba(0,0,0,0.1)] relative">
                 <button 
